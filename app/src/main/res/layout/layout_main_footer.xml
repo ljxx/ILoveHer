@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px50"
+    android:background="@color/main_footer_bg"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/main_footer_line_bg"
+        />
+
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/mRBHome"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/widget_bar_home_bg"
+            android:checked="true"
+            android:text="@string/main_bar_home"
+        />
+
+        <RadioButton
+            android:id="@+id/mRBMap"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/widget_bar_im_bg"
+            android:text="@string/main_bar_map"
+        />
+
+        <RadioButton
+            android:id="@+id/mRBCenter"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/widget_bar_home_bg"
+            android:text="@string/main_bar_center"
+        />
+
+        <RadioButton
+            android:id="@+id/mRBFind"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/widget_bar_interest_bg"
+            android:text="@string/main_bar_find"
+        />
+
+        <RadioButton
+            android:id="@+id/mRBUser"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/widget_bar_user_bg"
+            android:text="@string/main_bar_user"
+        />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <View style="@style/main_footer_bar_view"/>
+
+        <View style="@style/main_footer_bar_view"/>
+
+        <View style="@style/main_footer_bar_view"/>
+
+        <View style="@style/main_footer_bar_view"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/px0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            >
+            <View
+                android:id="@+id/mView"
+                android:layout_width="@dimen/px1"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bg_unread_count"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/mView"
+                android:layout_marginLeft="@dimen/px2"
+                android:layout_marginTop="@dimen/px2"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/text_color_white"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

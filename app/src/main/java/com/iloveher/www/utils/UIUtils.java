@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
 
-import com.iloveher.www.ui.base.BaseActivity;
+import com.iloveher.www.ui.base.BaseFragmentActivity;
 import com.iloveher.www.ui.base.BaseApplication;
 
 public class UIUtils {
@@ -114,7 +114,7 @@ public class UIUtils {
 		
 		
 		
-		BaseActivity activity = BaseActivity.getForegroundActivity();
+		BaseFragmentActivity activity = BaseFragmentActivity.getForegroundActivity();
 		if(activity != null){
 			activity.startActivity(intent);
 		}else{
@@ -143,7 +143,7 @@ public class UIUtils {
 	}
 
 	private static void showToast(String str) {
-		BaseActivity frontActivity = BaseActivity.getForegroundActivity();
+		BaseFragmentActivity frontActivity = BaseFragmentActivity.getForegroundActivity();
 		if (frontActivity != null) {
 			Toast.makeText(frontActivity, str, Toast.LENGTH_LONG).show();
 		}

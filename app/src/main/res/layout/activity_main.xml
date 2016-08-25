@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null"
+    android:fitsSystemWindows="true"
     tools:context="com.iloveher.www.ui.MainActivity">
-    <TextView
+
+    <!--header-->
+    <include layout="@layout/layout_main_header"/>
+
+    <FrameLayout
+        android:id="@+id/mFrameLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="哈哈哈哈"/>
-</RelativeLayout>
+        android:layout_height="@dimen/px0"
+        android:layout_weight="1"
+        android:background="@color/background_color"
+        />
+
+    <!--footer-->
+    <include layout="@layout/layout_main_footer"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px50"
+    android:background="@color/main_header_bg"
+    >
+
+    <Button
+        android:id="@+id/mBack"
+        style="@style/title_base_button"
+        android:background="@drawable/btn_back"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/mTitle"
+        style="@style/main_header_title"
+        android:layout_centerInParent="true"
+        android:text="主页main"
+        />
+
+</RelativeLayout>
