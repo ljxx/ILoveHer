@@ -175,7 +175,6 @@ public class MainActivity extends BaseFragmentActivity {
             } else {
                 // 退出应用程序
                 FinishUtils.AppExit();
-
             }
         }
         return super.dispatchKeyEvent(event);
