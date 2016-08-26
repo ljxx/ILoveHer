@@ -8,6 +8,8 @@
     <dimen name="px2">2dp</dimen>
     <dimen name="px3">3dp</dimen>
     <dimen name="px5">5dp</dimen>
+    <dimen name="px10">10dp</dimen>
+    <dimen name="px15">15dp</dimen>
     <dimen name="px50">50dp</dimen>
 
     <!--字体大小-->

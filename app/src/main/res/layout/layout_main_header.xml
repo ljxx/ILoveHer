@@ -1,11 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/px50"
     android:background="@color/main_header_bg"
+    android:orientation="horizontal"
+    android:gravity="center"
     >
 
-    <Button
+    <LinearLayout
+        android:layout_width="@dimen/px50"
+        android:layout_height="@dimen/px50"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/scan_icon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px2"
+            android:text="扫一扫"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_white"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/px0"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1.0"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="搜索需要的藏品"
+            android:paddingLeft="30dp"
+            android:paddingTop="@dimen/px10"
+            android:paddingBottom="@dimen/px10"
+            android:paddingRight="@dimen/px10"
+            android:textSize="12sp"
+            android:focusable="false"
+            android:layout_marginRight="@dimen/px10"
+            android:background="@drawable/main_search_edit_bg"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_search"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/px50"
+        android:layout_height="@dimen/px50"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_mesage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px2"
+            android:text="消息"
+            android:textSize="10sp"
+            android:textColor="@color/text_color_white"
+            />
+    </LinearLayout>
+
+    <!--<Button
         android:id="@+id/mBack"
         style="@style/title_base_button"
         android:background="@drawable/btn_back"
@@ -17,6 +88,6 @@
         style="@style/main_header_title"
         android:layout_centerInParent="true"
         android:text="主页main"
-        />
+        />-->
 
-</RelativeLayout>
+</LinearLayout>
