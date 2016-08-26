@@ -8,12 +8,18 @@
     <dimen name="px2">2dp</dimen>
     <dimen name="px3">3dp</dimen>
     <dimen name="px5">5dp</dimen>
+    <dimen name="px8">8dp</dimen>
     <dimen name="px10">10dp</dimen>
     <dimen name="px15">15dp</dimen>
+    <dimen name="px20">20dp</dimen>
+    <dimen name="px25">25dp</dimen>
+    <dimen name="px30">30dp</dimen>
     <dimen name="px50">50dp</dimen>
 
     <!--字体大小-->
     <dimen name="text_size_14">14.0sp</dimen>
+    <dimen name="text_siae_10">10.0sp</dimen>
     <dimen name="text_size_11">11.0sp</dimen>
+    <dimen name="text_size_12">12.0sp</dimen>
     <dimen name="text_size_19">19.0sp</dimen>
 </resources>

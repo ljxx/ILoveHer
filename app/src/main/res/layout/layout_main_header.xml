@@ -8,23 +8,15 @@
     >
 
     <LinearLayout
-        android:layout_width="@dimen/px50"
-        android:layout_height="@dimen/px50"
-        android:orientation="vertical"
-        android:gravity="center"
+        style="@style/main_header_linearlayout"
         >
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            style="@style/main_header_image"
             android:background="@drawable/scan_icon"
             />
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/px2"
-            android:text="扫一扫"
-            android:textSize="10sp"
-            android:textColor="@color/text_color_white"
+            style="@style/main_header_label"
+            android:text="@string/main_header_scan"
             />
     </LinearLayout>
 
@@ -37,42 +29,33 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="搜索需要的藏品"
-            android:paddingLeft="30dp"
+            android:hint="@string/main_header_search"
+            android:paddingLeft="@dimen/px30"
             android:paddingTop="@dimen/px10"
             android:paddingBottom="@dimen/px10"
             android:paddingRight="@dimen/px10"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_size_12"
             android:focusable="false"
-            android:layout_marginRight="@dimen/px10"
             android:background="@drawable/main_search_edit_bg"
             />
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="8dp"
+            android:layout_width="@dimen/px20"
+            android:layout_height="@dimen/px20"
+            android:layout_margin="@dimen/px8"
             android:background="@drawable/ic_search"
             />
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="@dimen/px50"
-        android:layout_height="@dimen/px50"
-        android:orientation="vertical"
-        android:gravity="center"
+        style="@style/main_header_linearlayout"
         >
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            style="@style/main_header_image"
             android:background="@drawable/icon_mesage"
             />
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/px2"
-            android:text="消息"
-            android:textSize="10sp"
-            android:textColor="@color/text_color_white"
+            style="@style/main_header_label"
+            android:text="@string/main_header_message"
             />
     </LinearLayout>
 

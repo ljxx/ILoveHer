@@ -8,6 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--首页hearder-->
+    <style name="main_header_linearlayout">
+        <item name="android:layout_width">@dimen/px50</item>
+        <item name="android:layout_height">@dimen/px50</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="main_header_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/px2</item>
+        <item name="android:textSize">@dimen/text_siae_10</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+
+    <style name="main_header_image">
+        <item name="android:layout_width">@dimen/px25</item>
+        <item name="android:layout_height">@dimen/px25</item>
+    </style>
+
     <!--首页title_button-->
     <style name="title_base_button">
         <item name="android:layout_width">@dimen/px50</item>
