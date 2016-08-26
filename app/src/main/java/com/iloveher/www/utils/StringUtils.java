@@ -1,5 +1,6 @@
 package com.iloveher.www.utils;
 
+import android.net.Uri;
 import android.text.*;
 import android.text.style.CharacterStyle;
 import android.text.style.ForegroundColorSpan;
@@ -108,5 +109,44 @@ public class StringUtils {
 			size = String.valueOf(len * 100 / 1024 / 1024 / 1024 / (float) 100) + "GB";
 		}
 		return size;
+	}
+
+	/**
+	 * 判断是不空字符串包括“null”
+	 *
+	 * @param str
+	 * @return
+	 */
+	public static boolean isNullStr(String str) {
+		if (TextUtils.isEmpty(str)) {
+			return true;
+		} else if ("null".equals(str.trim().toLowerCase())) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * 去除null字符串
+	 *
+	 * @return
+	 */
+	public static String removeNullStr(String str) {
+		if (isNullStr(str))
+			return "";
+		return str.trim().replace("null", "");
+	}
+
+	/**
+	 * 处理url中含中文的问题
+	 * @param mUrl
+	 * @return
+	 */
+	public static String encode(String mUrl){
+		String mPath = "";
+		if(!isNullStr(mUrl)){
+			mPath = Uri.encode(mUrl,"utf-8").replaceAll("%3A", ":").replaceAll("%2F", "/");
+		}
+		return mPath;
 	}
 }

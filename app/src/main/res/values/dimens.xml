@@ -15,6 +15,7 @@
     <dimen name="px25">25dp</dimen>
     <dimen name="px30">30dp</dimen>
     <dimen name="px50">50dp</dimen>
+    <dimen name="px200">200dp</dimen>
 
     <!--字体大小-->
     <dimen name="text_size_14">14.0sp</dimen>

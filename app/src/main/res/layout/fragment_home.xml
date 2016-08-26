@@ -1,15 +1,26 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.iloveher.www.ui.fragment.HomeFragment">
+
+    <!--Banner 轮播图 canLoop://控制循环与否-->
+    <com.iloveher.www.library.banner.ConvenientBanner
+        android:id="@+id/mBannerViewPager"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200"
+        app:canLoop="true"
+        />
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/mCenter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:text="首页内容区"
         android:textSize="26sp"/>
 
-</FrameLayout>
+</LinearLayout>
