@@ -11,11 +11,11 @@ import android.widget.Toast;
 
 import com.iloveher.www.R;
 import com.iloveher.www.ui.base.BaseFragmentActivity;
-import com.iloveher.www.ui.fragment.InformationFragment;
-import com.iloveher.www.ui.fragment.SafetyFragment;
-import com.iloveher.www.ui.fragment.HomeFragment;
-import com.iloveher.www.ui.fragment.AffairFragment;
-import com.iloveher.www.ui.fragment.UserFragment;
+import com.iloveher.www.ui.mainfragment.InformationFragment;
+import com.iloveher.www.ui.mainfragment.SafetyFragment;
+import com.iloveher.www.ui.mainfragment.HomeFragment;
+import com.iloveher.www.ui.mainfragment.AffairFragment;
+import com.iloveher.www.ui.mainfragment.UserFragment;
 import com.iloveher.www.utils.FinishUtils;
 
 import java.util.ArrayList;

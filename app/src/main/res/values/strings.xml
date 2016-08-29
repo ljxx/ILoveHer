@@ -5,7 +5,7 @@
     <string name="main_header_scan">扫一扫</string>
     <string name="main_header_search">搜索需要的藏品</string>
     <string name="main_header_message">消息</string>
-    
+
     <!--首页-->
     <string name="main_bar_home">首页</string>
     <string name="main_bar_map">事务</string>
@@ -15,4 +15,31 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--资讯-->
+    <string name="information_recommend">推荐</string>
+    <string name="information_health">健康</string>
+    <string name="information_education">教育</string>
+    <string name="information_recreation">娱乐</string>
+    <string name="information_short_film">短片</string>
+    <string name="information_cross_talk">段子</string>
+    <string name="information_kitchen">厨房</string>
+    <string name="information_society">社会</string>
+    <string name="information_campus">校园</string>
+    <string name="information_belle">美女</string>
+    <string name="information_sexes">两性</string>
+
+    <array name="pagerTitles">
+        <item>推荐</item>
+        <item>健康</item>
+        <item>教育</item>
+        <item>娱乐</item>
+        <item>短片</item>
+        <item>段子</item>
+        <item>厨房</item>
+        <item>社会</item>
+        <item>校园</item>
+        <item>美女</item>
+        <item>两性</item>
+    </array>
 </resources>

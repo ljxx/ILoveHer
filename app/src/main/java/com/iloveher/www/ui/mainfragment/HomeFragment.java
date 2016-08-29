@@ -1,4 +1,4 @@
-package com.iloveher.www.ui.fragment;
+package com.iloveher.www.ui.mainfragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -62,7 +62,7 @@ public class HomeFragment extends BaseFragment {
         mCenter.setText("What are you dong ?");
         StoreHouseHeader mHeader = new StoreHouseHeader(mContext);
         mHeader.setPadding(0, UIUtils.dip2px(15), 0, 0);
-        mHeader.initWithString("ILoaveHer", DeviceUtil.sp2px(mContext,10));
+        mHeader.initWithString("I Loave Her", DeviceUtil.sp2px(mContext,8));
         mHeader.setTextColor(mCenter.getResources().getColor(R.color.text_color_gray));
         mPtrLayout.setHeaderView(mHeader);
         mPtrLayout.addPtrUIHandler(mHeader);

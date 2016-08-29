@@ -2,14 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.InformationFragment">
+    tools:context="com.iloveher.www.ui.informationFragment.EducationFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="资讯内容区"
-        android:textSize="26sp"/>
+        android:text="@string/information_kitchen" />
 
 </FrameLayout>

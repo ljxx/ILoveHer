@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.iloveher.www.ui.fragment.HomeFragment">
+    tools:context="com.iloveher.www.ui.mainfragment.HomeFragment">
 
     <in.srain.cube.views.ptr.PtrClassicFrameLayout
         android:id="@+id/mPtrLayout"
@@ -26,7 +26,7 @@
                 android:id="@+id/mBannerViewPager"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/px200"
+                android:layout_height="@dimen/px150"
                 app:canLoop="true"
                 />
 
