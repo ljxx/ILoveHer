@@ -14,4 +14,9 @@ public class SafetyFragment extends BaseFragment {
     protected void initView() {
 
     }
+
+    @Override
+    protected void initListen() {
+
+    }
 }

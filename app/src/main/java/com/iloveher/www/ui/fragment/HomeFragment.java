@@ -12,10 +12,18 @@ import com.iloveher.www.library.banner.ConvenientBanner;
 import com.iloveher.www.library.banner.holder.CBViewHolderCreator;
 import com.iloveher.www.library.banner.holder.Holder;
 import com.iloveher.www.ui.base.BaseFragment;
+import com.iloveher.www.utils.DeviceUtil;
 import com.iloveher.www.utils.StringUtils;
+import com.iloveher.www.utils.UIUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import in.srain.cube.views.ptr.PtrClassicFrameLayout;
+import in.srain.cube.views.ptr.PtrDefaultHandler;
+import in.srain.cube.views.ptr.PtrFrameLayout;
+import in.srain.cube.views.ptr.PtrHandler;
+import in.srain.cube.views.ptr.header.StoreHouseHeader;
 
 public class HomeFragment extends BaseFragment {
 
@@ -39,6 +47,7 @@ public class HomeFragment extends BaseFragment {
 
     private ConvenientBanner mBannerViewPager;
     private TextView mCenter;
+    private PtrClassicFrameLayout mPtrLayout;
 
     @Override
     protected int inflateView() {
@@ -48,9 +57,23 @@ public class HomeFragment extends BaseFragment {
     @Override
     protected void initView() {
         mBannerViewPager = (ConvenientBanner) mView.findViewById(R.id.mBannerViewPager);
+        mPtrLayout = (PtrClassicFrameLayout) mView.findViewById(R.id.mPtrLayout);
         mCenter = (TextView) mView.findViewById(R.id.mCenter);
         mCenter.setText("What are you dong ?");
+        StoreHouseHeader mHeader = new StoreHouseHeader(mContext);
+        mHeader.setPadding(0, UIUtils.dip2px(15), 0, 0);
+        mHeader.initWithString("ILoaveHer", DeviceUtil.sp2px(mContext,10));
+        mHeader.setTextColor(mCenter.getResources().getColor(R.color.text_color_gray));
+        mPtrLayout.setHeaderView(mHeader);
+        mPtrLayout.addPtrUIHandler(mHeader);
+        mPtrLayout.setLastUpdateTimeRelateObject(this);
         initList();
+    }
+
+    @Override
+    protected void initListen() {
+
+        /*---------------------Banner-----轮播图---------------*/
         mBannerViewPager.setPages(new CBViewHolderCreator() {
             @Override
             public Object createHolder() {
@@ -64,6 +87,19 @@ public class HomeFragment extends BaseFragment {
         /*.setPageTransformer(Transformer.DefaultTransformer)*/;    //集成特效之后会有白屏现象，新版已经分离，如果要集成特效的例子可以看Demo的点击响应。
 //        convenientBanner.setManualPageable(false);//设置不能手动影响;
 
+        /*---------------------下拉刷新--------------------*/
+        mPtrLayout.setPtrHandler(new PtrHandler() {
+            @Override
+            public boolean checkCanDoRefresh(PtrFrameLayout frame, View content, View header) {
+                return PtrDefaultHandler.checkContentCanBePulledDown(frame,content,header);
+            }
+
+            @Override
+            public void onRefreshBegin(PtrFrameLayout frame) {
+                //加载数据完毕后关闭下拉框
+                mPtrLayout.refreshComplete();
+            }
+        });
     }
 
     private class LocalImageHolderView implements Holder<String> {
