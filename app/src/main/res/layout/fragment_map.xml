@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.iloveher.www.ui.fragment.MapFragment">
+    tools:context=".ui.fragment.AffairFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="周边内容区"
+        android:text="事务管理内容区"
         android:textSize="26sp"/>
 
 </FrameLayout>

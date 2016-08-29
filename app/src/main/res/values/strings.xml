@@ -8,11 +8,10 @@
     
     <!--首页-->
     <string name="main_bar_home">首页</string>
-    <string name="main_bar_map">周边</string>
-    <string name="main_bar_center">中心</string>
-    <string name="main_bar_find">寻找</string>
+    <string name="main_bar_map">事务</string>
+    <string name="main_bar_center">资讯</string>
+    <string name="main_bar_find">安全</string>
     <string name="main_bar_user">我的</string>
-    
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -11,10 +11,10 @@ import android.widget.Toast;
 
 import com.iloveher.www.R;
 import com.iloveher.www.ui.base.BaseFragmentActivity;
-import com.iloveher.www.ui.fragment.CenterFragment;
-import com.iloveher.www.ui.fragment.FindFragment;
+import com.iloveher.www.ui.fragment.InformationFragment;
+import com.iloveher.www.ui.fragment.SafetyFragment;
 import com.iloveher.www.ui.fragment.HomeFragment;
-import com.iloveher.www.ui.fragment.MapFragment;
+import com.iloveher.www.ui.fragment.AffairFragment;
 import com.iloveher.www.ui.fragment.UserFragment;
 import com.iloveher.www.utils.FinishUtils;
 
@@ -62,7 +62,7 @@ public class MainActivity extends BaseFragmentActivity {
     }
 
     private void initData(Bundle savedInstanceState) {
-        mFragmentTags = new ArrayList<String>(Arrays.asList("HomeFragment","MapFragment","CenterFragment","FindFragment","UserFragment"));
+        mFragmentTags = new ArrayList<String>(Arrays.asList("HomeFragment","AffairFragment","InformationFragment","SafetyFragment","UserFragment"));
         mCurrentIndex = FRAGMENT_ZERO; //默认首页0
         if(savedInstanceState != null){
             mCurrentIndex = savedInstanceState.getInt(CURRENTINDEX);
@@ -143,11 +143,11 @@ public class MainActivity extends BaseFragmentActivity {
             case FRAGMENT_ZERO:
                 return  new HomeFragment();
             case FRAGMENT_FIRST:
-                return new MapFragment();
+                return new AffairFragment();
             case FRAGMENT_SECOND:
-                return new CenterFragment();
+                return new InformationFragment();
             case FRAGMENT_THREE:
-                return new FindFragment();
+                return new SafetyFragment();
             case FRAGMENT_FOUR:
                 return new UserFragment();
             default:
