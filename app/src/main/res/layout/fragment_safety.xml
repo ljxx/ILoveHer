@@ -13,12 +13,23 @@
         android:text="安全中心内容区"
         android:textSize="26sp"/>
 
-    <GridView
-        android:id="@+id/mGridView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/text_color_gray"
-        android:numColumns="3"
-        />
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <com.iloveher.www.ui.widget.MyGridView
+            android:id="@+id/mGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_gray"
+            android:numColumns="3"
+            android:horizontalSpacing="@dimen/px0"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/px0"
+            />
+    </ScrollView>
 
 </LinearLayout>

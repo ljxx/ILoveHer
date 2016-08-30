@@ -3,15 +3,15 @@ package com.iloveher.www.ui.mainfragment;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.TextView;
 
 import com.iloveher.www.R;
 import com.iloveher.www.ui.base.BaseFragment;
+import com.iloveher.www.ui.widget.MyGridView;
 
 public class SafetyFragment extends BaseFragment {
 
-    private GridView mGridView;
+    private MyGridView mGridView;
     private String[] mModules;
     private GridViewAdapter mAdapter;
 
@@ -22,7 +22,7 @@ public class SafetyFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        mGridView = (GridView) mView.findViewById(R.id.mGridView);
+        mGridView = (MyGridView) mView.findViewById(R.id.mGridView);
         mModules = mContext.getResources().getStringArray(R.array.safer_modules);
         mAdapter = new GridViewAdapter();
         mGridView.setAdapter(mAdapter);
@@ -57,5 +57,7 @@ public class SafetyFragment extends BaseFragment {
             mtext.setText(mModules[position]);
             return view;
         }
+
+
     }
 }
