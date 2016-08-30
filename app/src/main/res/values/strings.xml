@@ -42,4 +42,17 @@
         <item>美女</item>
         <item>两性</item>
     </array>
+    
+    <!--首页-安全-->
+    <array name="safer_modules">
+        <item>应用锁</item>
+        <item>手机定位</item>
+        <item>手机锁</item>
+        <item>被盗拍照</item>
+        <item>响铃报警</item>
+        <item>远程备份</item>
+        <item>清除数据</item>
+        <item> </item>
+        <item>  </item>
+    </array>
 </resources>

@@ -23,4 +23,7 @@
     <color name="information_text_black">#000000</color>
     <color name="information_text_gray_light">#DFDFDF</color>
     <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
 </resources>
